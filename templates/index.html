@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% extends "bootstrap/base.html" %}
+{% import "navbar.html" as nav %}
+{% import "main.html" as main %}
+{% block title %}Picon{% endblock %}
+
+{% block head %}
+{{super()}}
+<style>
+body { padding-top: 70px; }
+</style>
+{%endblock head%}
+
+{% block navbar %}
+	{{ nav }}
+{% endblock navbar %}
+
+{% block content %}
+	<p class="lead">
+		{{nachricht}}
+	</p>
+{% endblock %}
+
